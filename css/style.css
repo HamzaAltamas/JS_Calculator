@@ -1,0 +1,195 @@
+[data-theme="dark"]{
+    background-color: blue;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+*::selection{
+    background-color: blueviolet;
+}
+
+
+body{
+    background-image: url(../images/F85GHXH-purple-galaxy-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+    font-family: 'Twinkle Star', cursive;
+}
+
+/* ################### all  common css end ######################### */
+
+.calculatorBody{
+  width: 300px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.418);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 0 30px #000;
+  display: grid;
+  grid-template-rows: 8% 25% auto;
+ 
+}
+.calcheader{
+    background-color: rgba(0, 0, 0, 0.329);
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.calcbody{
+    background-color:rgba(137, 43, 226, 0.274);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+    text-align: right;
+}
+.calcbuttons{
+    background-color: rgba(0, 0, 0, 0.329);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+   grid-column-gap: 10px;
+   grid-row-gap: 10px;
+   padding: 10px 0;
+    justify-content: space-around;
+}
+.calcbuttons div{
+    width: 50px;
+    height: 50px;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+}
+.symbol{
+    background-color: rgb(198, 138, 255);
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.symbol:hover{
+    background-color: #fff;
+    color: rgb(198, 138, 255);
+    box-shadow: 0 0 10px #000;
+}
+.darksymbol{
+    background-color:rgb(164, 71, 250) ;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    font-size: 30px;
+}
+.darksymbol:hover{
+    background-color: #fff;
+    color:rgb(164, 71, 250);
+    box-shadow: 0 0 10px #000;
+    font-size: 30px;
+}
+.number{
+    background-color: #fff;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.number:hover{
+    background-color: rgb(198, 138, 255);
+    color:#fff;
+    box-shadow: 0 0 10px #000;
+}
+
+/* slider btn */
+
+/* .theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme-switch-wrapper em {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  width: 50px;
+  left: -20px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #fff;
+  bottom: 0;
+  cursor: pointer;
+  left: 0px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: var(--slide-circle);
+  content: "";
+  bottom: -5px;
+  height: 26px;
+  /* left: 0px; */
+  right: 25px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: rgb(198, 138, 255);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  background-color: blueviolet;
+  
+} */
